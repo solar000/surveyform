@@ -1,0 +1,190 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="surveystyle.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">
+        &#128261solargrills Survey </h1>
+      <p id="description" class="description text-center">
+        thank you for helping us serve you better
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>what time are you most likely to visit &#128261solargrills</p>
+        <select id="dropdown" name="time" class="form-control" required>
+          <option disabled selected value>choose time period</option>
+          <option value="lunch"> 12-3 o'clock</option>
+          <option value="dinner"> 4-7 o'clock</option>
+          <option value="night-cap"> 8-11 o'clock</option>
+          <option value="preferNo"> Prefer not to say</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Would you recommend &#128261solargrills to a friend?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label>
+        <label><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+       <div class="form-group">
+        <p>
+          What is your favorite feature at &#128261solargrills?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="f1">QR code menu</option>
+          <option value="f2">cocktail specials</option>
+          <option value="f3">combo platters</option>
+          <option value="f4">complimentary salad bowl</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>
+          Which new features would you pick?
+           <span class="clue">(select most preferred three)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="endless-mimosas"
+            type="checkbox"
+            class="input-checkbox"
+          />endless mimosas</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="earlier-open"
+            type="checkbox"
+            class="input-checkbox"
+          />earlier opening time</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="music-ask"
+            type="checkbox"
+            class="input-checkbox"
+          />music requests</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="deliver"
+            type="checkbox"
+            class="input-checkbox"
+          />delivery</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="games"
+            type="checkbox"
+            class="input-checkbox"
+          />games night</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="karaoke"
+            type="checkbox"
+            class="input-checkbox"
+          />karaoke</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="save-table"
+            type="checkbox"
+            class="input-checkbox"
+          />table reservations</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="veggie"
+            type="checkbox"
+            class="input-checkbox"
+          />vegetarian options</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>Any notes or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your note here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  
+      </body>
